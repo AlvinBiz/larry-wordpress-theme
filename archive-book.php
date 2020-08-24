@@ -26,10 +26,12 @@ get_header();
 
 
         <td class="book-link book-<?php echo $number; ?>">
+					<a href="<?php echo get_permalink(); ?>">
           <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
           <div class="overlay">
             <p><?php echo strtoupper(get_the_title()); ?></p>
           </div>
+									</a>
         </td>
 
 		<?php
